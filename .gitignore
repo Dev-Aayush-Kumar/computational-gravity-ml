@@ -1,0 +1,9 @@
+*.aux
+*.log
+*.toc
+*.blg
+__pycache__/
+*.pkl
+07_Applications/CV_Resume/
+01_Research_Papers/Static_Relativistic_Potential/02_Python_Code/test.py
+potential_comparison.png

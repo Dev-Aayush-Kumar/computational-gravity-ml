@@ -1,0 +1,45 @@
+\begin{thebibliography}{1}
+
+\bibitem{newton1687}
+I.~Newton, {\em Philosophiae Naturalis Principia Mathematica}.
+\newblock Royal Society, 1687.
+
+\bibitem{einstein1916}
+A.~Einstein, ``The foundation of the general theory of relativity,'' {\em
+  Annalen der Physik}, 1916.
+
+\bibitem{schwarzschild1916}
+K.~Schwarzschild, ``On the gravitational field of a point mass according to
+  einstein's theory,'' {\em Sitzungsberichte der Königlich Preussischen
+  Akademie der Wissenschaften}, 1916.
+
+\bibitem{pedregosa2011}
+F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
+  M.~Blondel, P.~Prettenhofer, R.~Weiss, V.~Dubourg, J.~Vanderplas, A.~Passos,
+  D.~Cournapeau, M.~Brucher, M.~Perrot, and {\'E}.~Duchesnay, ``Scikit-learn:
+  Machine learning in python,'' {\em Journal of Machine Learning Research},
+  vol.~12, pp.~2825--2830, 2011.
+
+\bibitem{bishop2006}
+C.~M. Bishop, {\em Pattern Recognition and Machine Learning}.
+\newblock Springer, 2006.
+
+\bibitem{hastie2009}
+T.~Hastie, R.~Tibshirani, and J.~Friedman, {\em The Elements of Statistical
+  Learning}.
+\newblock Springer, 2009.
+
+\bibitem{goodfellow2016}
+I.~Goodfellow, Y.~Bengio, and A.~Courville, {\em Deep Learning}.
+\newblock MIT Press, 2016.
+
+\bibitem{breiman2001}
+L.~Breiman, ``Random forests,'' {\em Machine Learning}, vol.~45, pp.~5--32,
+  2001.
+
+\bibitem{karniadakis2021}
+G.~E. Karniadakis, I.~G. Kevrekidis, L.~Lu, P.~Perdikaris, S.~Wang, and
+  L.~Yang, ``Physics-informed machine learning,'' {\em Nature Reviews Physics},
+  vol.~3, pp.~422--440, 2021.
+
+\end{thebibliography}
