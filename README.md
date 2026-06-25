@@ -1,60 +1,77 @@
 # Computational Gravity ML
 
 ## Project Overview
+
 This repository accompanies the research project:
 
-### Computational Analysis of Newtonian and Relativistic Gravitational Potentials: From Analytical Models to Machine Learning Approximations
+**Relativistic Gravitational Potentials: Error Analysis and Machine Learning Approximation**
 
-The research focuses on exploring the connection between Newtonian gravitational potential and the relativistic gravitational potential resulting from Schwarzschild spacetime through an analytical, numerical, and machine learning perspective.
-
----
-
-## Aims and Objectives
-* Comparison of Newtonian and Schwarzschild gravitational potentials.
-* Measurement of differences between Newtonian and relativistic gravities.
-* Generation of computational data related to gravitational potentials.
-* Implementation of machine learning techniques for estimating relativistic potentials.
+The project investigates the differences between Newtonian and relativistic gravitational potentials through analytical derivations, numerical simulations, error analysis, and machine learning approximation techniques.
 
 ---
 
-## Planned Methodology
+## Key Contributions
 
-### Physics
+- Derivation of relativistic and Newtonian potential models
+- Relative error formulation and simplification
+- Threshold and asymptotic error analysis
+- Gravitational field comparison
+- Dataset generation for computational experiments
+- Machine learning prediction of relativistic potential behavior
+- Comparative evaluation of:
+  - Polynomial Regression
+  - Neural Networks
+  - Random Forest Models
 
-* Newtonian Gravitational Potential
-* Schwarzschild Metric
-* Relativistic Potential
-* Weak-Field Approximation
+---
 
-### Computational Analysis
+## Results
 
-* Numerical Dataset Generation
-* Graphical Analysis
-* Error Analysis
-* Parameter Sensitivity Studies
+Key findings include:
 
-### Machine Learning
-
-* Polynomial Regression
-* Random Forest Regression
-* Neural Network Approximation
-* Model Performance Evaluation
+- Quantification of Newtonian approximation errors across multiple regimes
+- Identification of strong-field and weak-field transition behavior
+- High-accuracy machine learning approximation of relativistic potential characteristics
+- Feature importance analysis for model interpretability
 
 ---
 
 ## Repository Structure
 
-* **paper/** - manuscript and figures
-* **data/** - generated datasets
-* **src/** - Python source code
-* **results/** - plots and model outputs
-* **docs/** - project documentation
+```text
+Computational-Gravity-ML/
+│
+├── 01_Research_Papers/
+│   └── Static_Relativistic_Potential/
+│       ├── 02_Python_Code/
+│       ├── 03_Dataset/
+│       ├── 04_Graphs_and_Figures/
+│       ├── 05_Machine_Learning/
+│       └── 06_Paper_Draft/
+│
+└── README.md
+```
+---
+
+## Reproducibility
+
+All source code, datasets, figures, and manuscript files used in this research are included in this repository.
 
 ---
 
-## Current Status
+## Status
 
-* Project under active development.
-* Research framework established.
-* Computational methodology under development.
-* Machine learning implementation planned.
+Research completed
+
+Manuscript completed
+
+Computational experiments completed
+
+Machine learning analysis completed
+
+---
+
+## Author
+
+Aayush Kumar
+Independent Student Researcher
