@@ -28,7 +28,7 @@
 \usepackage{hyperref}
 \usepackage{placeins}
 \usepackage{float}
-\title{\textbf{Machine-Learning-Assisted Analysis of a Static Relativistic Gravitational Potential: A Comparative Study with Newtonian Approximation and Error Quantification}} 
+\title{\textbf{Relativistic Gravitational Potentials: Error Analysis and Machine Learning Approximation}} 
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
@@ -1731,9 +1731,18 @@ potential.
 
 The improved performance of neural networks and random forest regression
 highlights the importance of model flexibility when approximating
-complex scientific relationships. These models are capable of learning
-patterns from the generated dataset without explicitly evaluating the
-analytical expression during prediction.
+complex scientific relationships. 
+
+The results demonstrate that machine learning models are capable of
+reconstructing the underlying nonlinear structure of the relativistic
+potential directly from sampled numerical data. Although the governing
+equation is analytically known in the present study, the experiment
+provides a controlled benchmark for evaluating how different machine
+learning architectures capture physically meaningful relationships. Such
+benchmark systems are valuable because they allow model performance to be
+assessed against an exact theoretical solution before extending similar
+techniques to more complex physical systems where analytical solutions may
+not exist.
 
 However, the role of machine learning in this study is complementary
 rather than a replacement for the physical model. Since the training
@@ -1741,9 +1750,12 @@ data itself is generated from the analytical relativistic potential, the
 machine learning models are evaluated as approximation methods rather
 than independent methods of discovering the physical relationship.
 
-This distinction is important in scientific machine learning, where
-models should be evaluated not only by predictive accuracy but also by
-their connection to the physical system they represent.
+The present framework illustrates a broader principle in scientific
+machine learning: machine learning models can serve as efficient
+surrogate representations of computationally expensive physical models
+while remaining grounded in established physical theory. This approach
+is increasingly relevant in modern computational physics, where repeated
+evaluation of complex systems can become computationally demanding.
 
 The results suggest that machine learning methods can serve as effective
 computational tools for approximating nonlinear physical models and may
@@ -1833,6 +1845,14 @@ nonlinear scientific systems. The developed framework provides a
 foundation for future extensions involving more complex gravitational
 models, additional physical parameters, and physics-informed machine
 learning approaches.
+
+\section{Data and Code Availability}
+
+The complete source code, datasets, machine learning scripts, generated figures, and supplementary materials associated with this study are publicly available at:
+
+\url{https://github.com/Dev-Aayush-Kumar/computational-gravity-ml}
+
+This repository contains all computational workflows used to generate the numerical results, machine learning models, datasets, and visualizations presented in this paper.
 
 \section{Acknowledgements}
 
