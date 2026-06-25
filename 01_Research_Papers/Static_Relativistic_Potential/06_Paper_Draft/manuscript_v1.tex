@@ -28,18 +28,22 @@
 \usepackage{hyperref}
 \usepackage{placeins}
 \usepackage{float}
-\title{\textbf{Relativistic Gravitational Potentials: Error Analysis and Machine Learning Approximation}} 
+\title{\textbf{Computational Analysis of Newtonian and Relativistic Gravitational Potentials: Error Quantification and Machine Learning Approximations}}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
     citecolor=blue,
     urlcolor=blue
 }
-\author{Aayush Kumar}
+\author{
+Aayush Kumar\\
+Independent Student Researcher\\
+India\\
+\href{mailto:aayushkumar_@outlook.com}{aayushkumar\_@outlook.com}
+}
 \date{25 June 2026}
 \begin{document}
 \maketitle
-
 \section{Abstract}\label{abstract}
 Understanding the range of validity of classical gravitational models
 and identifying regimes where relativistic corrections become
@@ -75,7 +79,16 @@ scientific systems. The approach highlights the potential of machine
 learning as a tool for computational modeling while maintaining
 consistency with established physical principles.
 
-\newpage
+\noindent\textbf{Keywords:}
+Gravitational potential;
+Relativistic gravity;
+Newtonian approximation;
+Error analysis;
+Schwarzschild spacetime;
+Machine learning;
+Random forest regression;
+Computational physics
+
 \tableofcontents
 \newpage
 
@@ -420,7 +433,7 @@ we obtain:
 
 \[
 \Phi_{GR}(x)=
--\frac{c^2}{2}\left(\sqrt{1-\frac{1}{x}}-1\right).
+\frac{c^2}{2}\left(\sqrt{1-\frac{1}{x}}-1\right).
 \]
 
 the dimensionless Relativistic potential is obtained by normalizing with
@@ -431,7 +444,6 @@ $c^2$:
 =
 \frac{\Phi_{GR}}{c^2}
 =
--
 \frac{1}{2}
 \left(
 \sqrt{1-\frac{1}{x}}
@@ -482,10 +494,6 @@ and the Schwarzschild radius
 \[
 r_s=\frac{2GM}{c^2}
 \]
-
-the Newtonian potential can be rewritten as:
-
-\[\Phi_N(x)=-\frac{c^2}{2x}\]
 
 the normalized Newtonian potential becomes:
 
