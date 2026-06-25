@@ -38,13 +38,19 @@ Key findings include:
 
 ## Repository Structure
 
-01_Research_Papers/
-02_Python_Code/
-03_Dataset/
-04_Graphs_and_Figures/
-05_Machine_Learning/
-06_Paper_Draft/
-
+```text
+Computational-Gravity-ML/
+│
+├── 01_Research_Papers/
+│   └── Static_Relativistic_Potential/
+│       ├── 02_Python_Code/
+│       ├── 03_Dataset/
+│       ├── 04_Graphs_and_Figures/
+│       ├── 05_Machine_Learning/
+│       └── 06_Paper_Draft/
+│
+└── README.md
+```
 ---
 
 ## Reproducibility
