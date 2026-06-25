@@ -1,37 +1,71 @@
 # Computational Gravity ML
 
-## Overview
+## Project Overview
 
-This repository accompanies the research paper:
+This repository accompanies the research project:
 
-**Machine Learning Assisted Analysis of a Static Relativistic Gravitational Potential: A Comparative Study with Newtonian Approximation and Error Quantification**
+**Relativistic Gravitational Potentials: Error Analysis and Machine Learning Approximation**
 
-The project investigates the differences between a Newtonian gravitational potential and a static relativistic gravitational potential model through analytical derivations, numerical simulations, error quantification, and machine learning methods.
-
----
-
-## Research Contributions
-
-- Analytical comparison of Newtonian and relativistic gravitational potentials
-- Derivation of a closed-form relative error expression
-- Strong-field and weak-field regime analysis
-- Threshold analysis for Newtonian approximation validity
-- Numerical dataset generation across multiple gravitational regimes
-- Machine learning prediction of relativistic potential values
-- Comparative evaluation of Polynomial Regression, Neural Networks, and Random Forest models
+The project investigates the differences between Newtonian and relativistic gravitational potentials through analytical derivations, numerical simulations, error analysis, and machine learning approximation techniques.
 
 ---
 
-## Machine Learning Results
+## Key Contributions
 
-Models evaluated:
+- Derivation of relativistic and Newtonian potential models
+- Relative error formulation and simplification
+- Threshold and asymptotic error analysis
+- Gravitational field comparison
+- Dataset generation for computational experiments
+- Machine learning prediction of relativistic potential behavior
+- Comparative evaluation of:
+  - Polynomial Regression
+  - Neural Networks
+  - Random Forest Models
 
-- Polynomial Regression
-- Neural Network Regression
-- Random Forest Regression
+---
 
-Performance metrics and residual analyses are included in the manuscript and accompanying figures.
+## Results
+
+Key findings include:
+
+- Quantification of Newtonian approximation errors across multiple regimes
+- Identification of strong-field and weak-field transition behavior
+- High-accuracy machine learning approximation of relativistic potential characteristics
+- Feature importance analysis for model interpretability
 
 ---
 
 ## Repository Structure
+
+01_Research_Papers/
+02_Python_Code/
+03_Dataset/
+04_Graphs_and_Figures/
+05_Machine_Learning/
+06_Paper_Draft/
+
+---
+
+## Reproducibility
+
+All source code, datasets, figures, and manuscript files used in this research are included in this repository.
+
+---
+
+## Status
+
+Research completed
+
+Manuscript completed
+
+Computational experiments completed
+
+Machine learning analysis completed
+
+---
+
+## Author
+
+Aayush Kumar
+Independent Student Researcher
