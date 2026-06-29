@@ -28,7 +28,7 @@
 \usepackage{hyperref}
 \usepackage{placeins}
 \usepackage{float}
-\title{\textbf{Computational Analysis of Newtonian and Relativistic Gravitational Potentials: Error Quantification and Machine Learning Approximations}}
+\title{\textbf{Computational Analysis of Newtonian vs Relativistic Gravitational Potentials: Error Quantification and Machine Learning Approximations}}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
@@ -45,19 +45,19 @@ India\\
 \begin{document}
 \maketitle
 \section{Abstract}\label{abstract}
-Understanding the range of validity of classical gravitational models
-and identifying regimes where relativistic corrections become
-significant is an important problem in computational physics. In this
-work, we investigate a static relativistic gravitational potential
-through a combined analytical, numerical, and machine-learning-based
-approach.
+Understanding the applicability limits of classical gravitational models
+and identifying the conditions under which relativistic corrections become
+significant remain important challenges in computational physics. In this
+study, a static relativistic gravitational potential is investigated
+through an integrated framework combining analytical analysis, numerical
+evaluation, and machine-learning-based approaches.
 
 The relativistic formulation is analyzed and compared with the
 corresponding Newtonian approximation through mathematical derivation
 and computational error analysis. The deviation between the two models
-is quantified using relative error measurements, allowing the transition
-between strong-field and weak-field gravitational regimes to be studied
-systematically.
+is evaluated through relative error analysis, enabling a systematic
+investigation of the transition between weak-field and strong-field
+gravitational regimes.
 
 To explore the capability of data-driven methods in approximating
 nonlinear physical systems, a computational dataset is generated from
@@ -73,7 +73,7 @@ regression methods. The predictions are interpreted as computational
 approximations that complement the analytical formulation rather than
 replacing the physical model.
 
-This work presents a framework that combines theoretical physics,
+This study presents a framework that combines theoretical physics,
 numerical analysis, and machine learning for studying nonlinear
 scientific systems. The approach highlights the potential of machine
 learning as a tool for computational modeling while maintaining
@@ -268,15 +268,15 @@ neglected. As the characteristic distance from the gravitational field
 decreases, relativistic corrections start to play a bigger role and the
 classical description becomes less precise.
 
-The aim of this work is to examine the process of the transition from
+The aim of this study is to examine the process of the transition from
 the classical to the relativistic description by constructing a
 computational framework which allows us to compare the relativistic and
 the Newtonian potentials.
 
-By using analytical analysis, numerical calculations and machine
-learning algorithms we will investigate not only the physical
-characteristics of the system but also the possibility of obtaining
-computational approximations.
+By integrating analytical methods, numerical simulations, and machine
+learning algorithms, this study investigates both the underlying
+physical behaviour of the system and the feasibility of developing
+accurate computational approximations.
 
 The theoretical framework proposed in this section serves as a basis for
 the subsequent mathematical description, analysis of errors and machine
@@ -335,11 +335,11 @@ strong-field regions, deviations from the Newtonian description become
 significant, motivating comparison with a relativistic formulation.
 
 The mathematical definition and normalization of the Newtonian potential
-used in this work are presented in Section~\ref{newtonian-potential-equation}.
+used in this study are presented in Section~\ref{newtonian-potential-equation}.
 
 \subsection{Static Relativistic Potential Model}
 
-To incorporate strong-field gravitational effects, this work considers a
+To incorporate strong-field gravitational effects, this study considers a
 static relativistic potential derived from the Schwarzschild solution of
 general relativity.
 
@@ -411,7 +411,7 @@ Introducing the Schwarzschild radius
 r_s=\frac{2GM}{c^2}
 \]
 
-and the dimensionless coordinate
+and the dimensionless coordinate about which we discussed in Section~\ref{dimensionless-representation}.
 
 \[
 x=\frac{r}{r_s},
@@ -451,8 +451,8 @@ $c^2$:
 \right)
 \]
 
-This equation represents the reference relativistic model used
-throughout the study. The nonlinear square-root dependence introduces
+\textbf{This equation represents the reference relativistic model used
+throughout the study.} The nonlinear square-root dependence introduces
 deviations from classical gravity that become significant near the
 Schwarzschild radius.
 
@@ -485,7 +485,7 @@ where:
 \item $r$ represents the radial distance from the source.
 \end{itemize}
 
-Using the dimensionless radial coordinate introduced previously:
+Using the dimensionless radial coordinate introduced previously in Section~\ref{dimensionless-representation}:
 
 \[x=\frac{r}{r_s}\]
 
@@ -522,8 +522,8 @@ we obtain:
 \phi_N(x)=-\frac{1}{2x}
 \]
 
-This normalized expression provides a simplified representation that
-allows direct comparison with the relativistic potential model.
+\textbf{This normalized expression provides a simplified representation that
+allows direct comparison with the relativistic potential model.} 
 
 The Newtonian approximation serves as the standard for which the
 relativistic corrections are taken into consideration. For large values
@@ -1789,7 +1789,7 @@ dependent on the quality and range of the generated dataset. A model
 trained on a specific range of values may not generalize accurately
 outside that region without additional training data.
 
-Future extensions of this work could involve expanding the model to
+Future extensions of this study could involve expanding the model to
 include additional physical parameters, exploring more complex
 gravitational systems, and evaluating performance on independently
 generated numerical simulations or observational datasets.
@@ -1847,7 +1847,7 @@ formulation. The analytical model remains the source of the physical
 relationship, while machine learning provides an alternative method for
 efficient numerical representation.
 
-Overall, this work demonstrates the potential of integrating theoretical
+Overall, this study demonstrates the potential of integrating theoretical
 physics, numerical computation, and machine learning for studying
 nonlinear scientific systems. The developed framework provides a
 foundation for future extensions involving more complex gravitational
@@ -1864,7 +1864,7 @@ This repository contains all computational workflows used to generate the numeri
 
 \section{Acknowledgements}
 
-I would like to express my deepest gratitude to my parents for their unwavering support and my brother for keeping me amused throughout this research project and my broader academic journey. Their encouragement, patience, and belief in my abilities have been a constant source of motivation, especially during challenging periods. I am grateful for the opportunities, resources, and supportive environment they provided, which enabled me to pursue this work alongside my academic studies and future educational goals.
+I would like to express my deepest gratitude to my parents for their unwavering support and my brother for keeping me amused throughout this research project and my broader academic journey. Their encouragement, patience, and belief in my abilities have been a constant source of motivation, especially during challenging periods. I am grateful for the opportunities, resources, and supportive environment they provided, which enabled me to pursue this study alongside my academic studies and future educational goals.
 
 I would also like to thank a school friend whose own research publication motivated me to begin this journey. Seeing a fellow student undertake independent research helped me realize that such goals were achievable and encouraged me to pursue my own AI interests with greater confidence and determination.
 
@@ -1874,7 +1874,7 @@ More importantly, this individual demonstrated a level of belief in my abilities
 
 The research presented in this paper is the result of many months of study, persistence, and effort. However, much of the determination required to begin and continue this journey was strengthened by the support and encouragement received from this individual. Beyond the completion of this project, the influence has extended to broader academic aspirations, personal development, and the pursuit of goals that once seemed beyond reach.
 
-Some contributions to a person's growth cannot be measured through equations, datasets, or performance metrics. Nevertheless, they can leave a lasting impact. For that reason, I offer my sincere gratitude and appreciation for the encouragement, faith, and motivation that helped make this work possible.
+Some contributions to a person's growth cannot be measured through equations, datasets, or performance metrics. Nevertheless, they can leave a lasting impact. For that reason, I offer my sincere gratitude and appreciation for the encouragement, faith, and motivation that helped make this study possible.
 
 \newpage
 \bibliographystyle{ieeetr}
