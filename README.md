@@ -4,7 +4,7 @@
 
 This repository accompanies the research project:
 
-**Relativistic Gravitational Potentials: Error Analysis and Machine Learning Approximation**
+**Computational Analysis of Newtonian vs Relativistic Gravitational Potentials: Error Quantification and Machine Learning Approximations**
 
 The project investigates the differences between Newtonian and relativistic gravitational potentials through analytical derivations, numerical simulations, error analysis, and machine learning approximation techniques.
 
