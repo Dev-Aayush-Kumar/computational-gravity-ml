@@ -96,142 +96,157 @@ Computational physics
 
 \subsection{Motivation}\label{motivation}
 
-Mathematical modeling is essential in studying physical systems because
-it enables the formulation of mathematical relationships that describe
-and predict physical phenomena. In fact, different theories in physics
-use mathematical relations that help represent and analyze physical
-behaviors.
+Mathematical modeling provides a fundamental framework for describing
+physical systems by establishing quantitative relationships between
+observable quantities and theoretical predictions. Through appropriate
+mathematical formulations, complex physical phenomena can be analyzed,
+simulated, and compared under different conditions.
 
-Gravitational systems provide a prominent example where the limitations
-of different mathematical models become important. Although the
-classical theory of gravity proposed by Newton is accurate enough in
-most cases, it fails to properly describe physical processes when
-gravitational fields become much stronger \cite{newton1687}. Therefore,
-relativistic models based on Einstein's theory of gravity are required
-to study these systems and obtain accurate predictions \cite{einstein1916}.
+Gravitational systems represent an important example where the validity
+and limitations of different theoretical descriptions must be carefully
+examined. Newtonian gravity has successfully explained a wide range of
+phenomena and remains highly accurate in weak gravitational fields.
+However, its applicability becomes limited in regimes where spacetime
+curvature and relativistic effects become significant
+\cite{newton1687}. In such situations, general relativity provides the
+appropriate theoretical framework for obtaining accurate descriptions of
+gravitational behaviour \cite{einstein1916}.
 
-The transition of a physical system from being described by one
-mathematical model to another is an intriguing computational task since
-it involves quantifying how one model deviates from another. This task
-will help to identify the limits of applicability of a classical model
-and find the areas where relativistic corrections should be used.
+Understanding the transition between classical and relativistic
+descriptions is an important problem in computational physics because it
+requires quantifying the deviation between different theoretical
+models. Such analysis provides a systematic method for determining the
+range of validity of classical approximations and identifying the
+regimes where relativistic corrections become necessary.
 
-This study examines the problem using the methods of computation,
-including theoretical modeling, numerical analysis, and machine
-learning. The goal of the research is not to change the physical model
-itself, but to see how artificial intelligence can be applied in solving
-such problems.
+In this study, this problem is investigated through a combined
+analytical, numerical, and machine learning based approach. The aim is
+not to modify the underlying physical formulation, but to examine how
+computational techniques, including machine learning methods, can be
+used as approximation tools for a theoretically defined gravitational
+system.
 
 \subsection{Background of Relativistic Potential
 Models}\label{background-of-relativistic-potential-models}
 
-Models for describing gravitational interaction have drastically changed
-from classical Newtonian mechanics to relativistic ones \cite{newton1687, einstein1916}. The
-model of interaction from the Newtonian mechanics is described by forces
-between bodies. There is also gravitational potential that serves as an
-efficient tool for studying such a system.
+The mathematical description of gravitational interactions has evolved
+from classical formulations based on Newtonian mechanics to relativistic
+models based on the geometry of spacetime
+\cite{newton1687, einstein1916}. In Newtonian mechanics, gravitational
+effects are represented through forces and associated potential
+functions, which provide an effective description of the system under
+appropriate assumptions.
 
-Newtonian potential works effectively when gravitational field is weak,
-i.e., in weak-field approximation when it is safe to neglect the curving
-of spacetime around the object. Otherwise, there will be some deviations
-from this approach, and we need to consider a relativistic approach.
+The Newtonian potential provides an accurate approximation when the
+gravitational field is sufficiently weak and spacetime curvature effects
+can be neglected. However, as the strength of the gravitational field
+increases, deviations from the classical approximation become
+significant, requiring a relativistic description.
 
-There are several relativistic models for describing the gravitational
-field \cite{einstein1916}. These models differ from the Newtonian one because of
-some corrections arising from the interaction between matter, energy,
-and spacetime geometry. This difference becomes noticeable near the
-region of extremely strong gravitational fields. Therefore, the
-relativistic potential becomes different from the Newtonian one and the
-deviation is dependent on the scale of the system.
+General relativistic models introduce corrections arising from the
+interaction between matter, energy, and spacetime geometry
+\cite{einstein1916}. Among the important solutions of Einstein's field
+equations, the Schwarzschild solution provides a fundamental description
+of the gravitational field produced by a static spherically symmetric
+mass distribution \cite{schwarzschild1916}. The difference between
+Newtonian and relativistic descriptions becomes increasingly important
+near regions of strong gravitational fields.
 
-A numerical estimate of the difference between these models allows us to
-understand the limit beyond which the weak-field approximation becomes
-inaccurate. This allows us to investigate the range of applicability of
-this approximation.
+Quantifying this difference provides insight into the applicability
+limits of classical gravitational models. By evaluating the deviation
+between the two descriptions, it becomes possible to determine the
+regions where Newtonian approximations remain valid and where
+relativistic corrections significantly influence the predicted
+behaviour.
 
-In this paper, a relativistic static potential model will be
-investigated using mathematical analysis and computation \cite{schwarzschild1916}. The
-Newtonian approximation of the same model will be considered and the
-results of analysis will be presented through error estimations and
-approximation using machine learning techniques.
+In this work, a static relativistic potential model is investigated using
+analytical derivation and computational analysis
+\cite{schwarzschild1916}. The corresponding Newtonian approximation is
+examined, and the deviation between the two models is quantified through
+error analysis. Furthermore, machine learning based approximations are
+developed to investigate whether data-driven methods can effectively
+reproduce the behaviour of the relativistic potential.
 
 \subsection{Computational Physics and Machine
 Learning}\label{computational-physics-and-machine-learning}
 
-The use of computational techniques has become an integral component of
-modern scientific investigations, which makes it possible to study
-physical systems that may be difficult to analyze using purely
-analytical methods. Numerical simulation gives an opportunity to
-investigate mathematical models under different conditions and examine
-the dependencies between the parameters of physical systems.
+Computational methods have become an essential component of modern
+scientific research because they allow physical systems to be explored
+beyond the limitations of purely analytical approaches. Numerical
+techniques enable systematic investigation of theoretical models,
+parameter variations, and complex relationships between physical
+quantities.
 
-But the traditional computational approaches are becoming more costly in
-case of multiple calculations in the case of the large size of parameter
-spaces. And therefore, the need for searching other types of approaches
-which would be able to learn and approximate complex mathematical
-relations has been emerged.
+However, repeated evaluation of mathematical models can become
+computationally demanding, particularly when large parameter spaces or
+multiple simulations are involved. This has motivated the development of
+alternative computational approaches capable of learning and
+approximating complex relationships from generated or observed data.
 
-Machine learning offers a way of pattern recognition and building of
-predictive models based on data. Machine learning can serve as a
-surrogate modeling method in the scientific field, which allows building
-models that learn the dependencies between the input and output values
-(physical results of some theoretical system).
+Machine learning provides a framework for constructing predictive models
+by identifying patterns within datasets. In scientific applications,
+machine learning methods are increasingly used as surrogate models,
+where computationally efficient approximations are developed while
+maintaining consistency with established physical relationships
+\cite{bishop2006, hastie2009}.
 
-The application of machine learning in physics implies that apart from
-the need for accuracy there is a requirement of validation of the
-results in comparison with theoretical predictions and proper estimation
-of errors. Thus, the combination of machine learning with the analytical
-approaches and computational experiments is an important feature of the
-scientific machine learning investigations.
+The application of machine learning in physics requires careful
+validation against theoretical expectations because high predictive
+accuracy alone does not guarantee physical reliability. Therefore, the
+combination of analytical modelling, numerical analysis, and machine
+learning evaluation provides a more complete approach for studying
+scientific systems.
 
-In this project, machine learning approaches will be applied to the
-static relativistic potential system in order to estimate whether it is
-possible to construct an accurate approximation to the physical
-relationship. The machine learning approach will be considered as a
-supplementary computational technique.
+In this research, machine learning methods are applied to the static
+relativistic potential model to investigate their ability to approximate
+a known nonlinear physical relationship. The machine learning component
+is considered as a complementary computational approach rather than a
+replacement for the analytical formulation.
 
 \subsection{Objectives and
 Contributions}\label{objectives-and-contributions}
 
-The primary goal of this paper is to develop a computational framework
-that combines theoretical physics and machine learning to model a static
-relativistic potential.
+The primary objective of this study is to develop a computational
+framework that integrates theoretical gravitational modelling, numerical
+error analysis, and machine learning based approximation for analysing a
+static relativistic potential system.
 
-In particular, the study is aimed at exploring the connections between
-the relativistic and classical representations of gravitational
-phenomena and finding out if the machine learning models are capable of
-capturing the resulting physical connection.
+The study focuses on understanding the relationship between the
+relativistic and Newtonian descriptions of gravitational behaviour and
+evaluating whether machine learning models can accurately reproduce the
+resulting nonlinear relationship.
 
-The major goals of the current research include:
+The major objectives of this research are:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  Developing the mathematical formulation of static relativistic
-  potential and its classical approximation.
+  Developing the mathematical formulation of the static relativistic
+  potential and its corresponding Newtonian approximation.
 \item
-  Evaluating the discrepancy between the relativistic and Newtonian
-  models through error analysis.
+  Quantifying the deviation between the relativistic and classical
+  models using analytical and numerical error analysis.
 \item
-  Exploring the regime change (transition from the strong field to the
-  weak field) through examining the behavior of the relative error.
+  Investigating the transition between strong-field and weak-field
+  regimes through the behaviour of the relative error.
 \item
-  Generating a computational data set based on the theoretical model for
-  machine learning.
+  Constructing a computational dataset generated from the theoretical
+  model for machine learning experiments.
 \item
-  Testing several machine learning algorithms, such as regressions,
-  neural networks, and ensembles.
+  Evaluating multiple machine learning architectures, including
+  regression models, neural networks, and ensemble-based methods.
 \item
-  Comparing the performance of different models through proper
-  evaluations of their performance.
+  Comparing model performance using standard regression evaluation
+  metrics and analysing their ability to approximate the physical
+  relationship.
 \end{enumerate}
 
-The main contribution of the current research is the combination of
-three components: analytical physics modeling, numerical error analysis,
-and machine learning approximation into one unified process. Rather than
-treating artificial intelligence as a replacement for traditional
-scientific approaches, this study explores its role as a complementary
-computational tool.
+The main contribution of this work is the integration of three
+complementary components: analytical gravitational modelling, numerical
+quantification of model deviation, and machine learning based
+approximation. Rather than considering artificial intelligence as an
+alternative to theoretical physics, this study investigates its role as
+a computational tool for representing known physical relationships.
 
 \subsection{Organization of the Paper}\label{organization-of-the-paper}
 
@@ -1109,46 +1124,51 @@ capabilities of different machine learning models.
 
 \subsection{Dataset Generation and Preparation}\label{dataset-generation-and-preparation}
 
-The numerical analysis and machine learning experiments were performed
-using separate datasets designed for their respective purposes.
+The numerical analysis and machine learning experiments were conducted
+using datasets generated specifically for their respective objectives.
 
-For analytical error evaluation, threshold analysis, and asymptotic
-behaviour, a dataset spanning:
+For analytical investigations, including error evaluation, threshold
+analysis, and asymptotic behaviour analysis, a dataset covering the range:
 
 1.01 $\leq$ x $\leq$ 1000
 
-was generated. This range allows investigation of both strong-field and
-weak-field regimes.
+was generated. This extended range enables investigation of both
+strong-field and weak-field gravitational regimes.
 
 For machine learning experiments, a restricted dataset:
 
 1.01 $\leq$ x $\leq$ 100
 
-was used. At very large values of x, the relativistic potential
-approaches a slowly varying weak-field limit, causing reduced variation
-in the target function and making the learning problem less informative.
-Therefore, the reduced range was selected to provide a more meaningful
-representation of the nonlinear structure of the potential.
+was considered. At significantly larger values of x, the relativistic
+potential approaches a slowly varying weak-field limit, resulting in
+reduced variation in the target function. This decreases the information
+content available for model training. Therefore, the restricted range
+was selected to provide a more representative description of the
+nonlinear behaviour present within the potential.
 
-The machine learning models were trained and evaluated on this dataset
-using an 80:20 train-test split. The dataset consists of the normalized
-radial coordinate x as the input feature and the relativistic potential
+The machine learning models were trained and evaluated using an 80:20
+train-test split. The dataset consists of the normalized radial
+coordinate x as the input feature and the relativistic potential
+
 \[
 \phi_{GR}(x)
-\] as the target variable. Additional quantities such as the Newtonian
-potential, potential difference, and relative error were retained for
-numerical analysis but were not used as machine learning inputs.
+\]
+
+as the target variable. Additional physical quantities, including the
+Newtonian potential, potential difference, and relative error, were
+retained for numerical analysis but were excluded from the machine
+learning input features.
 
 \subsection{ Problem Definition}\label{problem-definition}
 
-The objective of the machine learning component in this study is to
-develop computational models capable of approximating the behavior of
-the static relativistic potential using data generated from the
-theoretical formulation.
+The objective of the machine learning component is to develop
+computational models capable of approximating the behaviour of the
+static relativistic potential using data generated from the analytical
+formulation.
 
-The problem can be considered a supervised learning task, where the
-input variable is the normalized radial coordinate (x), and the target
-output is the corresponding relativistic potential value:
+The problem is formulated as a supervised learning task, where the
+normalized radial coordinate acts as the input variable and the
+corresponding relativistic potential represents the target output:
 
 \[
 x \rightarrow \phi_{GR}(x)
@@ -1156,91 +1176,95 @@ x \rightarrow \phi_{GR}(x)
 
 The purpose of the machine learning models is to learn an efficient
 approximation of the relationship between the input parameter and the
-physical quantity, allowing rapid prediction without repeatedly
-evaluating the original analytical expression.
+physical quantity, allowing rapid evaluation without repeatedly
+calculating the original analytical expression.
 
-Several machine learning approaches with different levels of complexity
-are evaluated to understand how model architecture influences
-approximation accuracy. The models include traditional regression
-methods, nonlinear learning approaches, and ensemble-based techniques.
+Multiple machine learning approaches with different levels of complexity
+are investigated to analyse how model architecture influences
+approximation capability. The selected models represent different
+learning strategies, including traditional regression, nonlinear
+function approximation, and ensemble-based learning.
 
-The selected models represent different learning strategies:
+The evaluated models include:
 
 \begin{itemize}
 \tightlist
 \item
-  Linear regression, which provides a simple baseline model.
+  Linear regression, which provides a baseline approximation for the
+  relativistic potential.
 \item
-  Polynomial regression, which introduces nonlinear feature
-  relationships.
+  Polynomial regression, which introduces nonlinear feature expansion to
+  improve representation capability.
 \item
-  Neural networks, which can learn complex nonlinear patterns.
+  Neural networks, which can learn complex nonlinear relationships from
+  data.
 \item
-  Random forest regression, which uses an ensemble of decision-based
-  models to capture relationships within the data.
+  Random forest regression, which applies ensemble learning to capture
+  nonlinear dependencies within the dataset.
 \end{itemize}
 
-Each model is evaluated using standard performance metrics and compared
-against the known physical solution to determine its ability to
-approximate the relativistic potential.
+Each model is evaluated using standard regression metrics and compared
+against the analytical solution to determine its ability to reproduce
+the relativistic potential.
 
-This framework allows the study to investigate not only whether machine
-learning can reproduce the physical relationship, but also how different
-algorithms perform when applied to a scientifically generated dataset.
+This framework enables investigation of both the accuracy of individual
+machine learning approaches and the influence of different model
+architectures when applied to a physically generated dataset.
 
-All machine learning models were implemented using the Scikit-learn library \cite{pedregosa2011}.
+All machine learning models were implemented using the Scikit-learn
+library \cite{pedregosa2011}.
 
 \subsection{Linear Regression}\label{linear-regression}
 
-Linear regression is used as the first baseline model to evaluate how
-well a simple mathematical approximation can represent the behavior of
-the relativistic potential.
+Linear regression is considered as the initial baseline model to
+evaluate whether a simple mathematical approximation can represent the
+behaviour of the relativistic potential.
 
 The model assumes a linear relationship between the input variable and
-the target output, represented as:
+the target output, expressed as:
 
 \[
 \hat{y}=a x+b
 \]
 
 where:
+
 \begin{itemize}
 \item $\hat{y}$ represents the predicted potential value.
 \item $x$ represents the normalized radial coordinate.
-\item $a$ and $b$ are parameters learned during training.
+\item $a$ and $b$ represent the parameters optimized during training.
 \end{itemize}
 
-Although the actual relationship between (x) and $\phi_{GR}(x)$ is
+Although the actual relationship between x and $\phi_{GR}(x)$ is
 nonlinear, linear regression provides a useful reference point for
-understanding the complexity of the learning problem.
+evaluating the inherent complexity of the approximation problem.
 
-The purpose of including this model is not to achieve the highest
-prediction accuracy, but to establish a performance baseline. If a
-simple linear relationship performs poorly, it indicates that the
-underlying physical system contains nonlinear behavior that cannot be
-captured using a basic approximation.
+The purpose of including this model is not to obtain maximum prediction
+accuracy, but to establish a quantitative baseline. Poor performance of
+a linear model indicates that the underlying physical relationship
+contains nonlinear characteristics that cannot be represented using a
+simple first-order approximation.
 
 The trained linear regression model is evaluated using standard
-regression metrics and compared with more advanced models in later
+regression metrics and compared with more advanced models in subsequent
 sections.
 
-This comparison helps demonstrate how increasing model complexity
-affects the ability of machine learning methods to approximate the
+This comparison demonstrates how increasing model flexibility influences
+the capability of machine learning approaches to approximate the
 relativistic potential.
 
-Regression methods are widely used as baseline approaches for
-approximating relationships between variables in statistical learning
+Regression-based approaches are commonly used as baseline methods in
+statistical learning and predictive modelling applications
 \cite{bishop2006, hastie2009}.
 
 \subsection{Polynomial Regression}\label{polynomial-regression}
 
-Polynomial regression is introduced to investigate whether adding
-nonlinear terms improves the approximation of the relativistic potential
-compared to a simple linear model.
+Polynomial regression is introduced to examine whether incorporating
+higher-order nonlinear terms improves approximation of the relativistic
+potential compared with a linear model.
 
-Unlike linear regression, which assumes a direct proportional
-relationship between the input and output, polynomial regression expands
-the input variable into higher-order terms:
+Unlike linear regression, polynomial regression expands the input
+variable into higher-order terms:
 
 \[
 \hat{y}=a_0+a_1x+a_2x^2+...+a_nx^n
@@ -1249,89 +1273,86 @@ the input variable into higher-order terms:
 where the coefficients $a_0, a_1, \ldots, a_n$ are learned from the
 training data.
 
-By including additional powers of (x), the model gains the ability to
-represent more complex curves and approximate nonlinear relationships.
-This makes polynomial regression a natural intermediate approach between
+By introducing additional powers of x, polynomial regression gains the
+ability to represent curved relationships and approximate nonlinear
+functions. Therefore, it provides an intermediate approach between
 simple linear models and more flexible machine learning architectures.
 
-However, increasing polynomial complexity can introduce challenges such
-as overfitting, where the model learns the specific characteristics of
-the training data but performs poorly on unseen examples.
+However, increasing polynomial order can introduce overfitting, where
+the model captures specific characteristics of the training dataset but
+fails to generalize effectively to unseen data.
 
-In this study, polynomial regression is used to evaluate whether a
-mathematically enhanced regression approach can capture the nonlinear
-behavior of the relativistic potential. Its performance is compared with
-both simpler models and more advanced learning techniques to understand
-the advantages and limitations of different approaches.
+In this study, polynomial regression is used to investigate whether
+mathematical feature expansion alone is sufficient to capture the
+nonlinear structure of the relativistic potential. Its performance is
+compared with both simpler regression methods and higher-capacity
+machine learning models.
 
-The results from this model provide insight into whether the complexity
-of the physical relationship can be effectively represented through
-traditional mathematical transformations or requires more flexible
-machine learning architectures.
+The results provide insight into whether the complexity of the physical
+relationship can be represented through analytical transformations or
+requires more flexible learning architectures.
 
 \subsection{Neural Network}\label{neural-network}
 
-A neural network model is introduced to evaluate whether a more flexible
-learning architecture can capture the nonlinear relationship present in
-the relativistic potential system.
+A neural network model is introduced to investigate whether a flexible
+learning architecture can effectively approximate the nonlinear
+relationship present in the relativistic potential system.
 
-Unlike traditional regression methods, neural networks can learn complex
-relationships by combining multiple layers of interconnected
-computational units. The theoretical foundation of neural networks and
-deep learning methods is described in modern machine learning literature
-\cite{goodfellow2016}. The general structure of a neural network consists of an input
+Unlike traditional regression techniques, neural networks learn complex
+relationships through interconnected computational units arranged in
+multiple layers. The theoretical foundation of neural networks and deep
+learning approaches is described in modern machine learning literature
+\cite{goodfellow2016}. A typical neural network consists of an input
 layer, one or more hidden layers, and an output layer.
 
-In this study, the input to the network is the normalized radial
-coordinate:
+In this study, the input variable is the normalized radial coordinate:
 
 \[
 x
 \]
 
-and the output is the predicted relativistic potential:
+and the predicted output is the relativistic potential:
 
 \[
 \hat{\phi}_{GR}(x)
 \]
 
-The model learns an approximation function:
+The network learns an approximation function:
 
 \[
 f(x)\approx \phi_{GR}(x)
 \]
 
-during the training process by adjusting internal parameters to minimize
-the difference between predicted and actual values.
+during training by adjusting internal parameters to minimize the
+difference between predicted and analytical values.
 
-The advantage of neural networks in this problem is their ability to
-represent nonlinear relationships without requiring an explicitly
-defined mathematical form. Since the relativistic potential contains
-nonlinear behavior, this flexibility allows the model to capture
-patterns that simpler regression methods may fail to represent.
+The primary advantage of neural networks in this context is their
+ability to represent nonlinear relationships without requiring an
+explicit functional form. Since the relativistic potential exhibits
+nonlinear behaviour, this flexibility allows the model to capture
+patterns that simpler regression methods may not represent accurately.
 
-The performance of the neural network is evaluated using regression
-metrics and compared with other models. The objective is not to replace
-the analytical formulation, but to investigate whether a learned
-approximation can reproduce the behavior of the physical model with high
+The neural network performance is evaluated using regression metrics and
+compared with other models. The objective is not to replace the
+analytical formulation, but to examine whether a learned approximation
+can reproduce the behaviour of the physical model with sufficient
 accuracy.
 
-The results demonstrate the capability of neural networks as a
-computational approximation method for nonlinear scientific systems and
-provide a comparison between data-driven modeling and analytical
-approaches.
+The resulting analysis provides a comparison between analytical
+modelling and data-driven approximation methods for a nonlinear
+scientific system.
 
 \subsection{Random Forest}\label{random-forest}
 
-Random forest regression is included in this study as an ensemble-based
-machine learning approach for approximating the relativistic potential.
+Random forest regression is included as an ensemble-based machine
+learning approach for approximating the relativistic potential.
 
-A random forest consists of multiple decision trees that are trained on
-different subsets of the data. The random forest approach follows the
-ensemble learning methodology introduced by Breiman \cite{breiman2001}. Each
-individual tree learns a set of decision-based relationships between the
-input variable and the target output, and the final prediction is
-obtained by combining the outputs of all trees.
+A random forest consists of multiple decision trees trained on different
+subsets of the dataset. The approach follows the ensemble learning
+methodology introduced by Breiman \cite{breiman2001}. Each individual
+tree learns decision-based relationships between the input variable and
+target output, and the final prediction is obtained by combining the
+predictions from all trees.
 
 The prediction process can be represented as:
 
@@ -1340,6 +1361,7 @@ The prediction process can be represented as:
 \]
 
 where:
+
 \begin{itemize}
 \item $T_i(x)$ represents the prediction from the $i^{th}$ decision tree.
 \item $N$ represents the total number of trees.
@@ -1347,62 +1369,59 @@ where:
 \end{itemize}
 
 The advantage of random forest regression is its ability to model
-nonlinear relationships while reducing the risk of overfitting compared
-to a single decision tree. Since the relativistic potential exhibits
-nonlinear behavior, an ensemble of decision-based models can effectively
-capture variations within the generated dataset.
+nonlinear relationships while reducing sensitivity to individual tree
+variations. Since the relativistic potential exhibits nonlinear
+behaviour, ensemble-based learning provides an effective method for
+capturing complex patterns within the generated dataset.
 
-In this study, the random forest model is evaluated alongside
-regression-based methods and neural networks to compare different
-learning strategies. Its performance provides insight into how ensemble
-learning approaches handle physically generated nonlinear datasets.
+In this study, random forest regression is evaluated alongside
+regression-based approaches and neural networks to compare different
+learning strategies.
 
-The high predictive accuracy achieved by the model demonstrates that
-machine learning techniques can approximate the numerical behavior of
-the relativistic potential when sufficient and representative training
-data are provided. However, the predictions remain dependent on the
-quality and range of the underlying physical dataset. Since the training
-data is generated from the analytical model, the machine learning
-performance represents the ability of the algorithms to reproduce the
-known physical relationship rather than independently derive the
-underlying law.
+The high predictive accuracy obtained by the model demonstrates that
+machine learning techniques can successfully approximate the numerical
+behaviour of the relativistic potential within the investigated dataset
+range. However, this performance should be interpreted in the context of
+a deterministic analytical dataset. Since the training data originates
+from the known physical model, the machine learning model reproduces an
+existing relationship rather than independently discovering the
+underlying physical law.
 
 \subsection{Feature Importance Analysis}\label{feature-importance-analysis}
 
 In addition to evaluating prediction accuracy, understanding the
-influence of input variables is an important aspect of interpreting
-machine learning models.
+relationship between input variables and model predictions is an
+important aspect of interpreting machine learning systems.
 
-Feature importance analysis was included as an interpretability check to
-confirm that the machine learning model relies on the physically
-meaningful input parameter used in the formulation. In this study, the
-primary feature considered is the normalized radial coordinate:
+Feature importance analysis is included as an interpretability step to
+verify that the machine learning model relies on the physically relevant
+input parameter used in the formulation. In this study, the primary
+feature considered is the normalized radial coordinate:
 
 \[
 x=\frac{r}{r_s}
 \]
 
 Since the dataset is generated from a single physical variable, the
-analysis focuses on understanding how changes in (x) influence the
+analysis focuses on understanding the influence of changes in x on the
 predicted relativistic potential.
 
 For tree-based models such as random forest regression, feature
-importance can be calculated by analyzing how much each feature
-contributes to reducing prediction uncertainty during the learning
-process.
+importance is determined by analysing the contribution of the feature in
+reducing prediction uncertainty during model construction.
 
-The feature importance analysis provides an additional interpretation
-layer by connecting the machine learning model back to the underlying
-physics. Rather than treating the model as a complete black box, this
-approach helps verify that the learned relationship is consistent with
-the expected dependence of the potential on the radial coordinate.
+This analysis connects the machine learning predictions with the
+underlying physical formulation. Rather than treating the model as a
+complete black box, it provides an additional verification that the
+learned relationship remains consistent with the expected dependence of
+the potential on radial distance.
 
-Although the present system contains a single dominant input variable,
+Although the present system contains only one dominant input parameter,
 this analysis establishes a foundation for future extensions involving
-multiple physical parameters, where interpretability becomes
-increasingly important.
+multiple physical variables, where interpretability becomes increasingly
+important.The feature importance analysis is included as an interpretability assessment rather than as a comparison between multiple physical variables. Since the present formulation contains a single independent parameter, the analysis confirms that the machine learning model preserves the expected dependence of the relativistic potential on the normalized radial coordinate.
 
-The combination of prediction performance and model interpretation
+The combination of prediction performance and interpretability analysis
 allows the machine learning results to be evaluated from both
 computational and scientific perspectives.
 
@@ -1410,11 +1429,9 @@ computational and scientific perspectives.
 
 \subsection{Model Performance Comparison}\label{model-performance-comparison}
 
-The performance of the machine learning models was evaluated using Mean
-Absolute Error (MAE), Root Mean Square Error (RMSE), and the coefficient
-of determination (R²).
+The predictive capability of the machine learning models was evaluated using three widely adopted regression performance metrics: Mean Absolute Error (MAE), Root Mean Square Error (RMSE), and the coefficient of determination ($R^2$) \cite{bishop2006,hastie2009}. These metrics collectively quantify prediction accuracy, sensitivity to large errors, and the proportion of variance explained by each model.
 
-The obtained results are summarized below.
+The resulting performance measures are summarized in Table~\ref{tab:model_performance}.
 
 \begin{table}[H]
 \centering
@@ -1425,6 +1442,7 @@ The obtained results are summarized below.
 \toprule
 Model & MAE & RMSE & $R^2$ \\
 \midrule
+
 Linear Regression &
 0.05579 &
 0.07709 &
@@ -1449,8 +1467,7 @@ Random Forest &
 
 \end{table}
 
-The comparison between the analytical relativistic potential and machine
-learning predictions is visualized in Figure 4.
+The corresponding predictions produced by the machine learning models are compared with the analytical relativistic potential in Figure~\ref{fig:potential_comparison}.
 
 \begin{figure}[H]
 \centering
@@ -1459,35 +1476,23 @@ learning predictions is visualized in Figure 4.
 \label{fig:potential_comparison}
 \end{figure}
 
-The results show a clear difference in predictive performance among the
-evaluated models. Linear and polynomial regression achieved relatively
-poor performance, indicating that the relationship between the
-normalized radial coordinate and the relativistic potential is strongly
-nonlinear.
+A clear hierarchy in predictive performance is observed among the evaluated algorithms. Linear regression and polynomial regression exhibit comparatively large prediction errors, indicating that the dependence of the relativistic potential on the normalized radial coordinate is inherently nonlinear and cannot be represented adequately using low-order regression models.
 
-The neural network significantly improved prediction accuracy, achieving
-an R² value above 0.98. This demonstrates its ability to capture the
-nonlinear structure of the generated physical dataset.
+The neural network substantially improves the approximation accuracy, achieving an $R^2$ value exceeding 0.98 while simultaneously reducing both the MAE and RMSE. This demonstrates its ability to learn the nonlinear structure of the generated physical dataset with high fidelity.
 
-The random forest model produced the best overall performance, achieving
-an almost perfect fit with an R² value of approximately 0.999999 while
-maintaining extremely small prediction errors. The ensemble-based
-structure of the model allowed it to accurately approximate the
-relativistic potential within the machine learning dataset range used in
-this study. The extremely high performance of the random forest model is
-expected because the dataset is generated directly from a deterministic
-analytical function with a single input variable.
+Among all evaluated models, random forest regression provides the highest predictive accuracy, yielding an almost perfect coefficient of determination ($R^2 \approx 0.999999$) together with extremely small prediction errors. The ensemble-based learning strategy enables the model to reproduce the analytical relativistic potential with remarkable precision throughout the investigated machine-learning domain. Such exceptional performance is expected because the training dataset is generated directly from a deterministic analytical function involving a single independent variable.
 
-These results indicate that nonlinear machine learning approaches are
-substantially more effective than traditional regression methods for
-modeling the relativistic potential considered in this study.
+Overall, the results demonstrate that nonlinear machine learning methods provide substantially more accurate approximations of the relativistic potential than conventional regression techniques. They also illustrate the importance of selecting learning architectures capable of representing nonlinear physical relationships.
 
 \subsubsection{Numerical Error Analysis Summary}\label{numerical-error-analysis-summary}
 
-The computational analysis produced the following key numerical results:
+In addition to evaluating machine learning performance, the analytical formulation was investigated through numerical error analysis. The difference between the relativistic and Newtonian potentials is defined as
+
 \[
-\Delta \phi = \phi_{GR} - \phi_{N}
+\Delta\phi=\phi_{GR}-\phi_N
 \]
+
+The principal numerical results obtained from the computational analysis are summarized in Table~\ref{tab:error_summary}.
 
 \begin{table}[H]
 \centering
@@ -1496,7 +1501,7 @@ The computational analysis produced the following key numerical results:
 
 \renewcommand{\arraystretch}{1.45}
 
-\begin{tabular}{@{} l p{8cm} @{}}
+\begin{tabular}{@{} l p{7cm} @{}}
 \toprule
 \textbf{Quantity} & \textbf{Value} \\
 \midrule
@@ -1517,50 +1522,30 @@ Minimum relative error &
 $9.950372\%$ \\[2pt]
 
 Maximum relative error &
-$99.949987\%$ (approaching $100\%$ as $x \rightarrow \infty$) \\
+$99.949987\%$ (approaching $100\%$ as $x\rightarrow\infty$) \\
 
 \bottomrule
 \end{tabular}
 
 \end{table}
 
-The threshold analysis showed that the minimum relative error occurs at
-the lower boundary of the investigated domain (x = 1.01,), where the
-error is approximately 9.95\%. The 5\% and 1\% accuracy thresholds were
-not reached anywhere within the sampled domain. As x increases, the
-relative error grows and approaches approximately 100\% due to the
-different asymptotic behavior of the relativistic and Newtonian
-potentials.
+The numerical investigation reveals that the minimum relative error occurs at the lower boundary of the computational domain ($x=1.01$), where the discrepancy between the relativistic and Newtonian potentials is approximately $9.95\%$. Throughout the investigated interval, neither the $5\%$ nor the $1\%$ relative-error thresholds are attained.
+
+As the normalized radial coordinate increases, the relative error rises monotonically and approaches approximately $100\%$. This asymptotic behaviour originates from the fundamentally different mathematical forms of the relativistic and Newtonian potential functions. These results quantitatively illustrate the limitations of the Newtonian approximation within the adopted dimensionless formulation and provide a computational characterization of the transition between relativistic and classical gravitational descriptions.
 
 \subsection{Prediction Analysis}\label{prediction-analysis}
 
-The prediction results were further analyzed by comparing the machine
-learning outputs with the original relativistic potential values
-generated from the analytical model.
+To further assess the predictive capability of the evaluated machine learning algorithms, the model outputs were compared directly with the analytical relativistic potential generated from the theoretical formulation. Such comparisons provide a visual assessment of how accurately each learning algorithm reproduces the underlying physical relationship in addition to the numerical performance metrics presented previously.
 
-The prediction plots provide a visual representation of how closely each
-model follows the true physical relationship between the normalized
-radial coordinate (x) and the relativistic potential $\phi_{GR}(x)$.
+The prediction curves illustrate the agreement between the normalized radial coordinate ($x$) and the corresponding relativistic potential $\phi_{GR}(x)$ across the investigated machine-learning domain.
 
-The results show that simpler regression models exhibit noticeable
-deviations from the actual curve, particularly in regions where the
-relationship becomes more nonlinear. This behavior is expected because
-these models rely on limited assumptions about the structure of the
-underlying function.
+The linear and polynomial regression models exhibit noticeable deviations from the analytical solution, particularly in regions where the potential varies nonlinearly. This behaviour reflects the limited representational capacity of these relatively simple regression techniques when applied to nonlinear physical systems.
 
-The neural network model demonstrates improved agreement with the
-analytical solution by successfully capturing the nonlinear variation of
-the potential across the input range. The smoother representation
-obtained from the neural network reflects its ability to learn complex
-patterns from the training data.
+The neural network produces a substantially improved approximation, closely following the analytical solution over the entire computational domain. Its ability to learn complex nonlinear mappings enables the model to reproduce the variation of the relativistic potential with considerably greater accuracy than conventional regression approaches.
 
-The random forest model produces predictions that closely match the
-original relativistic potential values throughout the evaluated machine
-learning domain. This indicates that the ensemble-based approach is
-highly effective at approximating the numerical relationship present in
-the generated dataset.
+Among the evaluated models, random forest regression provides the closest agreement with the analytical solution. The predicted values remain nearly indistinguishable from the theoretical curve throughout the investigated range, demonstrating that ensemble learning methods can effectively approximate deterministic nonlinear physical relationships when trained using sufficiently representative datasets.
 
-The prediction capability of the random forest model is shown in Figure 5.
+The prediction capability of the random forest model is illustrated in Figure~\ref{fig:random_forest_prediction}.
 
 \begin{figure}[H]
 \centering
@@ -1569,68 +1554,41 @@ The prediction capability of the random forest model is shown in Figure 5.
 \label{fig:random_forest_prediction}
 \end{figure}
 
-The prediction analysis confirms the trends observed from the
-performance metrics. Models with greater capacity to capture nonlinear
-behavior provide more accurate approximations of the relativistic
-potential.
+The prediction analysis supports the conclusions obtained from the quantitative performance metrics. Machine learning models possessing greater nonlinear representational capacity consistently provide more accurate approximations of the relativistic potential than simpler regression-based methods.
 
-However, these results should be understood as an evaluation of machine
-learning as an approximation technique for a known physical model. The
-analytical formulation remains the source of the physical relationship,
-while the machine learning models provide computational representations
-of that relationship.
+It should be emphasized, however, that the objective of the present investigation is not to replace the underlying physical model with a purely data-driven alternative. Since the training data are generated directly from the analytical relativistic potential, the machine learning algorithms function as computational surrogate models rather than independent methods for discovering physical laws. Their performance therefore reflects the ability to reproduce an established analytical relationship efficiently while preserving the essential characteristics of the underlying gravitational model.
 
 \subsection{Residual Analysis}\label{residual-analysis}
 
-To further evaluate the performance of the machine learning models, the
-prediction errors were analyzed through residual analysis.
+To obtain a more detailed assessment of prediction accuracy, the performance of the machine learning models was further examined through residual analysis. Unlike global performance metrics such as MAE and RMSE, residual analysis provides information about the distribution of prediction errors throughout the computational domain and helps identify systematic deviations between the analytical model and its machine learning approximation.
 
-The residual is defined as the difference between the true relativistic
-potential value and the value predicted by the machine learning model:
+The residual is defined as the difference between the analytical relativistic potential and the corresponding machine learning prediction:
 
 \[
-Residual = \phi_{GR}(x)-\hat{\phi}_{GR}(x)
+\mathrm{Residual}=\phi_{GR}(x)-\hat{\phi}_{GR}(x)
 \]
 
 where:
+
 \begin{itemize}
 \tightlist
 \item
-  $\phi_{GR}(x)$ represents the analytical relativistic potential,
+$\phi_{GR}(x)$ represents the analytical relativistic potential.
 \item
-  $\hat{\phi}_{GR}(x)$ represents the machine learning prediction.
+$\hat{\phi}_{GR}(x)$ represents the machine learning prediction.
 \end{itemize}
 
-Analyzing residuals provides additional information about model behavior
-that cannot be obtained from overall accuracy metrics alone. A model
-with randomly distributed small residuals generally indicates that it
-has successfully captured the underlying relationship, while systematic
-patterns in residuals may indicate limitations in the model.
+Residual analysis complements conventional regression metrics by revealing how prediction errors are distributed over the input domain. A model exhibiting small, randomly distributed residuals generally indicates that the underlying physical relationship has been captured successfully, whereas systematic residual patterns may suggest deficiencies in the model structure or approximation capability.
 
-For simpler regression approaches, larger residual variations are
-expected due to their limited ability to represent the nonlinear
-structure of the relativistic potential. These deviations highlight the
-difficulty of approximating the physical relationship using restricted
-mathematical assumptions.
+The linear and polynomial regression models exhibit comparatively larger residuals, particularly in regions where the relativistic potential varies nonlinearly. These deviations are consistent with the limited flexibility of simple regression models and further demonstrate that low-order mathematical approximations are insufficient for accurately representing the nonlinear behaviour of the relativistic potential.
 
-The neural network and random forest models demonstrate significantly
-smaller residuals compared with the simpler regression approaches,
-indicating improved approximation capability. The reduction in
-prediction error suggests that these models are better able to capture
-the nonlinear dependence between the normalized radial coordinate and
-the relativistic potential.
+In contrast, the neural network and random forest models produce substantially smaller residuals across the investigated domain. The reduction in prediction error confirms their ability to capture the nonlinear dependence of the relativistic potential on the normalized radial coordinate with significantly greater accuracy.
 
-Residual analysis also provides insight into the reliability of machine
-learning predictions across different regions of the dataset. Regions
-with larger deviations can indicate areas where the underlying physical
-relationship is more difficult for the model to approximate.
+Residual analysis also provides insight into the local reliability of machine learning predictions. Regions exhibiting comparatively larger residuals identify portions of the parameter space where approximation becomes more challenging and therefore provide useful information regarding the limitations of each learning algorithm.
 
-This analysis complements the performance metrics and prediction plots
-by providing a more detailed understanding of how each model represents
-the relativistic potential.
+Consequently, residual analysis complements the global performance metrics presented previously by providing a more comprehensive evaluation of how effectively each machine learning model reproduces the analytical relativistic potential.
 
-The residual distribution provides additional information about
-prediction accuracy and model behavior.
+The residual distribution obtained from the machine learning predictions is illustrated in Figure~\ref{fig:residual_plot}.
 
 \begin{figure}[H]
 \centering
@@ -1641,44 +1599,25 @@ prediction accuracy and model behavior.
 
 \subsection{Feature Importance Results}\label{feature-importance-results}
 
-Feature importance analysis was performed to examine how the input
-variable contributes to the machine learning predictions.
+In addition to predictive accuracy, the interpretability of machine learning models is an important consideration in scientific applications. Feature importance analysis was therefore performed to examine the contribution of the input variable to the prediction process and to verify that the learned relationship remains consistent with the underlying physical formulation.
 
-In the present study, the dataset contains a primary physical parameter:
+The present dataset contains a single physical input parameter,
 
 \[
-x=\frac{r}{r_s}
+x=\frac{r}{r_s},
 \]
 
-which represents the normalized radial coordinate. Since the
-relativistic potential is generated as a function of this variable, the
-model's prediction behavior is directly influenced by changes in (x).
+which represents the normalized radial coordinate. Since the relativistic potential is explicitly defined as a function of this variable, the prediction produced by each machine learning model is entirely determined by the variation of $x$.
 
-Since the dataset contains a single physical input variable, the feature
-importance analysis confirms that the model relies entirely on the
-normalized radial coordinate as the source of predictive information in
-determining the predicted potential values. This agrees with the
-underlying mathematical formulation, where the potential is explicitly
-defined as a function of distance from the gravitational source.
+For tree-based algorithms such as random forest regression, feature importance is evaluated by measuring the contribution of each input variable to the reduction of prediction uncertainty throughout the ensemble of decision trees. Although the present study involves only a single input feature, this analysis provides an additional verification that the model attributes its predictive capability to the physically meaningful variable governing the analytical formulation.
 
-Although the current model involves a single input feature, the analysis
-demonstrates the importance of interpretability in scientific machine
-learning. A high-performing model should not only produce accurate
-predictions but should also maintain consistency with the physical
-relationships represented in the data.
+The feature importance results confirm that the normalized radial coordinate constitutes the complete source of predictive information within the generated dataset. This observation is fully consistent with the mathematical model, in which the relativistic potential depends solely on the dimensionless radial coordinate.
 
-The feature importance analysis provides additional confidence that the
-machine learning models are learning meaningful patterns from the
-generated dataset rather than producing predictions based on unrelated
-correlations.
+Although feature importance analysis is more informative for datasets containing multiple physical variables, its inclusion here establishes a transparent framework for interpreting machine learning models within a scientific context. Such interpretability analyses become increasingly valuable when extending the present methodology to more complex gravitational systems involving additional physical parameters.
 
-In future extensions involving multiple physical parameters, such
-interpretability methods can become increasingly important for
-understanding the contribution of different variables and improving
-trust in scientific machine learning models.
+Consequently, the combination of predictive performance evaluation and model interpretability provides a more comprehensive assessment of the applicability of machine learning techniques to computational physics problems.
 
-The contribution of the input variable to the model prediction is
-illustrated through feature importance analysis.
+The contribution of the input variable to the prediction process is illustrated in Figure~\ref{fig:feature_importance}.
 
 \begin{figure}[H]
 \centering
@@ -1691,127 +1630,128 @@ illustrated through feature importance analysis.
 
 \subsection{Physics Interpretation}\label{physics-interpretation}
 
-The analytical and computational results provide insight into the
-relationship between classical and relativistic descriptions of
-gravitational behavior.
+The analytical and computational results provide a quantitative
+understanding of the relationship between classical and relativistic
+descriptions of gravitational behaviour.
 
-The error analysis demonstrates that the Newtonian approximation
-captures the qualitative behavior of the relativistic model in the
-weak-field regime, while quantitative differences remain under the
-chosen normalization. This is consistent with the expected applicability
-of classical gravitational approximations in regimes where relativistic
-corrections become sufficiently small.
+The error analysis demonstrates that the Newtonian approximation can
+successfully reproduce the qualitative characteristics of the
+relativistic model in the weak-field regime. However, the quantitative
+difference between the two descriptions becomes increasingly significant
+as the gravitational field strength increases. This behaviour is
+consistent with the expected domain of validity of classical
+gravitational approximations, where relativistic corrections become
+important only beyond the weak-field limit.
 
-However, the increasing deviation between the two models in
-stronger-field regions highlights the limitations of applying classical
-approximations outside their intended range. The transition between
-relativistic and Newtonian behavior is not a sudden boundary, but a
-gradual change that can be quantified through the relative error
-function.
+The increasing deviation between the Newtonian and relativistic models
+in stronger-field regions highlights the limitations of extending
+classical approximations beyond their applicable range. The transition
+between relativistic and Newtonian behaviour does not occur at a sharp
+boundary; instead, it represents a continuous change that can be
+systematically quantified using the relative error function.
 
-The computational analysis allows this transition to be studied
-numerically by identifying regions where the Newtonian approximation
-achieves specific accuracy levels. This provides a measurable
-interpretation of the validity range of classical gravity within the
-considered model.
+The computational framework developed in this study allows this
+transition to be investigated by identifying the regions in which the
+Newtonian approximation satisfies specific accuracy requirements. This
+provides a measurable interpretation of the validity range of the
+classical approximation within the considered relativistic potential
+model.
 
-The results also demonstrate the importance of combining analytical
-methods with computational approaches. While the mathematical
-formulation provides the physical foundation of the system, numerical
-analysis allows detailed investigation of behavior across different
-regimes.
+The results further demonstrate the importance of combining analytical
+and computational methods in the investigation of physical systems.
+While the mathematical formulation establishes the theoretical basis of
+the model, numerical analysis enables detailed examination of its
+behaviour across different gravitational regimes.
 
-This combination creates a framework where physical understanding and
-computational modeling support each other, forming the basis for the
-machine learning analysis presented in this study.
+This integration of analytical physics and computational techniques
+provides the foundation for the machine learning analysis presented in
+this work, where data-driven methods are evaluated as computational
+approximations of the established physical relationship.
 
 \subsection{Machine Learning Interpretation}\label{machine-learning-interpretation}
 
-The machine learning results demonstrate the ability of data-driven
-approaches to approximate the behavior of a physically defined nonlinear
-system.
+The machine learning results demonstrate the capability of data-driven
+methods to approximate the behaviour of a nonlinear physical system
+generated from an analytical gravitational model.
 
-The comparison between different models shows that the choice of
-algorithm has a significant impact on prediction performance. Simpler
-approaches such as linear regression provide a useful baseline but are
-limited when dealing with the nonlinear structure of the relativistic
-potential.
+The comparison between different algorithms shows that model selection
+has a significant influence on approximation performance. Simpler
+methods, such as linear regression, provide an important baseline but
+are limited in their ability to represent the nonlinear structure of the
+relativistic potential.
 
 The improved performance of neural networks and random forest regression
-highlights the importance of model flexibility when approximating
-complex scientific relationships. 
+demonstrates that flexible machine learning architectures can effectively
+capture complex relationships present within physically generated
+datasets. These models successfully reconstruct the numerical behaviour
+of the relativistic potential without requiring repeated evaluation of
+the original analytical expression during prediction.
 
-The results demonstrate that machine learning models are capable of
-reconstructing the underlying nonlinear structure of the relativistic
-potential directly from sampled numerical data. Although the governing
-equation is analytically known in the present study, the experiment
-provides a controlled benchmark for evaluating how different machine
-learning architectures capture physically meaningful relationships. Such
-benchmark systems are valuable because they allow model performance to be
-assessed against an exact theoretical solution before extending similar
-techniques to more complex physical systems where analytical solutions may
-not exist.
+However, the purpose of machine learning in this study is not to replace
+the underlying physical formulation. Since the training data is generated
+directly from the analytical relativistic potential, the machine learning
+models are evaluated as approximation techniques rather than independent
+methods for discovering the governing physical law.
 
-However, the role of machine learning in this study is complementary
-rather than a replacement for the physical model. Since the training
-data itself is generated from the analytical relativistic potential, the
-machine learning models are evaluated as approximation methods rather
-than independent methods of discovering the physical relationship.
+This distinction is important in scientific machine learning, where
+predictive accuracy must be considered together with physical
+consistency and interpretability. The present study provides a controlled
+benchmark in which machine learning models can be compared against an
+exact theoretical solution, allowing their approximation capability to be
+evaluated objectively.
 
-The present framework illustrates a broader principle in scientific
-machine learning: machine learning models can serve as efficient
-surrogate representations of computationally expensive physical models
-while remaining grounded in established physical theory. This approach
-is increasingly relevant in modern computational physics, where repeated
-evaluation of complex systems can become computationally demanding.
+The framework demonstrates the potential of machine learning models as
+surrogate computational tools for nonlinear physical systems. Such
+approaches may become particularly useful in situations where repeated
+evaluation of complex models becomes computationally expensive while the
+underlying physical constraints remain well established.
 
-The results suggest that machine learning methods can serve as effective
-computational tools for approximating nonlinear physical models and may
-be useful in situations where repeated evaluations of complex systems
-are required. This concept is consistent with the broader development of
-scientific machine learning, where data-driven models are combined with
-physical knowledge \cite{karniadakis2021}.
+This concept is consistent with the broader development of scientific
+machine learning, where data-driven methods are combined with physical
+knowledge to improve computational efficiency and modelling capability
+\cite{karniadakis2021}.
 
 \subsection{Limitations and Future Extensions}\label{limitations-and-future-extensions}
 
 Although the results demonstrate the effectiveness of machine learning
 methods for approximating the relativistic potential, several
-limitations should be considered.
+limitations of the present framework should be acknowledged.
 
-The current dataset is generated from a known analytical model with a
-single primary input parameter. While this provides a controlled
-environment for evaluating machine learning performance, real physical
-systems often involve additional variables, boundary conditions,
-measurement uncertainties, and complex interactions.
+The current dataset is generated from a deterministic analytical model
+with a single independent variable. This controlled setup allows a clear
+evaluation of machine learning performance; however, realistic physical
+systems generally involve multiple parameters, complex boundary
+conditions, observational uncertainties, and interactions between
+different physical processes.
 
-Furthermore, the high prediction accuracy achieved by some models is
-dependent on the quality and range of the generated dataset. A model
-trained on a specific range of values may not generalize accurately
-outside that region without additional training data.
+Furthermore, the high prediction accuracy obtained by some models is
+dependent on the quality, distribution, and range of the generated
+dataset. A model trained within a specific parameter range may not
+generalize accurately beyond that range without additional training
+data or appropriate physical constraints.
 
-Future extensions of this study could involve expanding the model to
-include additional physical parameters, exploring more complex
-gravitational systems, and evaluating performance on independently
-generated numerical simulations or observational datasets.
+Future extensions of this work may include incorporating additional
+physical parameters, investigating more complex gravitational systems,
+and evaluating machine learning performance using independently generated
+numerical simulations or observational datasets.
 
-Another possible direction is the development of physics-informed
-machine learning approaches, where physical constraints are incorporated
-directly into the learning process. Such methods could combine the
-predictive ability of machine learning with the reliability of
-analytical physical laws. Physics-informed machine learning provides a
-framework for integrating governing physical principles into machine
-learning models \cite{karniadakis2021}.
+Another important direction is the development of physics-informed
+machine learning approaches, where governing physical principles are
+directly incorporated into the learning process. Such methods provide a
+framework for combining the flexibility of machine learning with the
+reliability of established physical laws \cite{karniadakis2021}.
 
-These extensions would allow the framework developed in this study to
+These extensions would allow the methodology developed in this study to
 move beyond approximation of a single theoretical relationship toward
-more complex scientific modeling problems.
+more complex scientific modelling problems where analytical solutions
+may be unavailable or computationally expensive.
 
-The framework developed in this study represents a controlled
-demonstration of how analytical physics models and machine learning
-techniques can be combined. While the present system focuses on a single
-relativistic potential, the methodology can be extended toward more
-complex scientific problems where exact analytical solutions may be
-computationally expensive or unavailable.
+The present work represents a controlled demonstration of how
+analytical physics models, numerical analysis, and machine learning
+techniques can be integrated within a unified computational framework.
+Although the current investigation focuses on a single relativistic
+potential, the proposed methodology provides a foundation for applying
+similar approaches to broader problems in computational physics.
 
 \section{Conclusion}
 

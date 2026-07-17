@@ -13,13 +13,6 @@ K.~Schwarzschild, ``On the gravitational field of a point mass according to
   einstein's theory,'' {\em Sitzungsberichte der Königlich Preussischen
   Akademie der Wissenschaften}, 1916.
 
-\bibitem{pedregosa2011}
-F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
-  M.~Blondel, P.~Prettenhofer, R.~Weiss, V.~Dubourg, J.~Vanderplas, A.~Passos,
-  D.~Cournapeau, M.~Brucher, M.~Perrot, and {\'E}.~Duchesnay, ``Scikit-learn:
-  Machine learning in python,'' {\em Journal of Machine Learning Research},
-  vol.~12, pp.~2825--2830, 2011.
-
 \bibitem{bishop2006}
 C.~M. Bishop, {\em Pattern Recognition and Machine Learning}.
 \newblock Springer, 2006.
@@ -28,6 +21,13 @@ C.~M. Bishop, {\em Pattern Recognition and Machine Learning}.
 T.~Hastie, R.~Tibshirani, and J.~Friedman, {\em The Elements of Statistical
   Learning}.
 \newblock Springer, 2009.
+
+\bibitem{pedregosa2011}
+F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
+  M.~Blondel, P.~Prettenhofer, R.~Weiss, V.~Dubourg, J.~Vanderplas, A.~Passos,
+  D.~Cournapeau, M.~Brucher, M.~Perrot, and {\'E}.~Duchesnay, ``Scikit-learn:
+  Machine learning in python,'' {\em Journal of Machine Learning Research},
+  vol.~12, pp.~2825--2830, 2011.
 
 \bibitem{goodfellow2016}
 I.~Goodfellow, Y.~Bengio, and A.~Courville, {\em Deep Learning}.
